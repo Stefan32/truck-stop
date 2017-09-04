@@ -1,0 +1,15 @@
+.about {
+
+  &__header {
+    color: $mainBlue;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 3rem;
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+}

@@ -1,0 +1,7 @@
+.large-picture {
+  border-bottom: 10px solid $mainBlue;
+
+  &__image {
+    display: block;
+  }
+}

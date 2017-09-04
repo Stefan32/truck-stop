@@ -8,7 +8,7 @@ img {
   height: auto;
 }
 
-* {
+* { /* this selects every element on the page */
   box-sizing: border-box;
 }
 
