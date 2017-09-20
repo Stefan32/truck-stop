@@ -1,0 +1,15 @@
+.contact-us {
+  &__text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    &--light {
+      font-weight: 300;
+    }
+
+    span {
+      padding-right: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}

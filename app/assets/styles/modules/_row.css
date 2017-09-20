@@ -15,7 +15,7 @@
     width: 66%;
 
     &--vertical-centered {
-      padding-top: 30px;
+      padding-top: 10px;
     }
   }
 
@@ -26,13 +26,34 @@
 
   &__7 {
     float: left;
-    width: 58.4%;
-    background-color: green;
+    margin-left: 6rem;
+    width: 45%;
   }
 
   &__5 {
     float: left;
     width: 41.6%;
-    background-color: red;
+    margin-left: 2rem;
+  }
+
+  &__small-3 {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 2rem;
+
+    &--blue {
+      color: $mainBlue;
+    }
+  }
+
+  &__small-4 {
+    float: left;
+    width: 34%;
+  }
+
+  &__small-5 {
+    float: left;
+    width: 34%;
   }
 }
