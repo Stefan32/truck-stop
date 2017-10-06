@@ -5,7 +5,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 class StickyHeader {
   constructor() {
     this.siteHeader = $(".site-header"); /* This selects elements with site-header as a class */
-    this.headerTriggerElement = $(".large-hero__title"); /* This selects the trigger element, when element reaches the top of the screen it will trigger the event */
+    this.headerTriggerElement = $("#about"); /* This selects the trigger element, when element reaches the top of the screen it will trigger the event */
     this.createHeaderWaypoint(); /* We want the waypoint to be created as soon as the page loads, so we need to call and run the method from the constructor */
     this.pageSections = $(".page-section"); /* this selects all elements with a class of page-section */
     this.headerLinks = $(".primary-nav a"); /* Look inside the primary nav element and grab all link elements */
@@ -44,7 +44,7 @@ class StickyHeader {
             $(matchingHeaderLink).addClass("is-current-link");
           }
         },
-        offset: "18%" /* makes the event trigger 18% sooner when scrolling down */
+        offset: "40%" /* makes the event trigger 18% sooner when scrolling down */
       });
 
       new Waypoint({ /* Create waypoint for each element when scrolling up */
@@ -56,7 +56,7 @@ class StickyHeader {
             $(matchingHeaderLink).addClass("is-current-link");
           }
         },
-        offset: "-40%" /* makes the event trigger 40% sooner when scrolling up */
+        offset: "-5%" /* makes the event trigger 40% sooner when scrolling up */
       });
     });
   }

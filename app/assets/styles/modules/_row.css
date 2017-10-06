@@ -12,7 +12,11 @@
 
   &__8 {
     float: left;
-    width: 66%;
+    width: 100%;
+
+    @mixin atMedium {
+      width: 66%;
+    }
 
     &--vertical-centered {
       padding-top: 10px;
@@ -25,35 +29,53 @@
   }
 
   &__7 {
-    float: left;
-    margin-left: 6rem;
-    width: 45%;
+
+    @mixin atMedium {
+      float: left;
+      margin-left: 2rem;
+      width: 45%;
+
+      @mixin atLarge {
+        margin-left: 6rem;
+      }
+    }
+
   }
 
   &__5 {
-    float: left;
-    width: 41.6%;
-    margin-left: 2rem;
+
+    @mixin atMedium {
+      float: left;
+      width: 41.6%;
+      margin-left: 2rem;
+    }
+
   }
 
   &__small-3 {
+
     float: left;
-    width: 30%;
-    text-align: right;
-    padding-right: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+
+    @mixin atMedium {
+      width: 45%;
+      padding-top: 1.3rem
+    }
+
 
     &--blue {
       color: $mainBlue;
     }
   }
 
-  &__small-4 {
-    float: left;
-    width: 34%;
-  }
-
   &__small-5 {
     float: left;
-    width: 34%;
+
+    @mixin atMedium {
+      width: 50%;
+    }
+
   }
 }

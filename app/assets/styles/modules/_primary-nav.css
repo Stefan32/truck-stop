@@ -25,6 +25,10 @@
     display: block;
     background-color: transparent; /* no background color */
     font-size: 1rem;
+
+    &.is-current-link {
+      color: $mainOrange;
+    }
   }
 
   a:hover {

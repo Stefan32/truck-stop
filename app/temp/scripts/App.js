@@ -11297,7 +11297,7 @@ var StickyHeader = function () {
     _classCallCheck(this, StickyHeader);
 
     this.siteHeader = (0, _jquery2.default)(".site-header"); /* This selects elements with site-header as a class */
-    this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title"); /* This selects the trigger element, when element reaches the top of the screen it will trigger the event */
+    this.headerTriggerElement = (0, _jquery2.default)("#about"); /* This selects the trigger element, when element reaches the top of the screen it will trigger the event */
     this.createHeaderWaypoint(); /* We want the waypoint to be created as soon as the page loads, so we need to call and run the method from the constructor */
     this.pageSections = (0, _jquery2.default)(".page-section"); /* this selects all elements with a class of page-section */
     this.headerLinks = (0, _jquery2.default)(".primary-nav a"); /* Look inside the primary nav element and grab all link elements */
@@ -11343,7 +11343,7 @@ var StickyHeader = function () {
               (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
             }
           },
-          offset: "18%" /* makes the event trigger 18% sooner when scrolling down */
+          offset: "40%" /* makes the event trigger 18% sooner when scrolling down */
         });
 
         new Waypoint({ /* Create waypoint for each element when scrolling up */
@@ -11355,7 +11355,7 @@ var StickyHeader = function () {
               (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
             }
           },
-          offset: "-40%" /* makes the event trigger 40% sooner when scrolling up */
+          offset: "-5%" /* makes the event trigger 40% sooner when scrolling up */
         });
       });
     }

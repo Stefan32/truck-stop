@@ -1,10 +1,17 @@
 .generic-content-container {
 
+  padding: 0 1rem;
+
+
   P {
     font-weight: 400;
     line-height: 2;
     margin: 0 0 1.8rem 0;
     font-size: 1.187rem;
+
+    @mixin atMedium {
+      padding-left: 3rem;
+    }
   }
 
   p a {
@@ -17,6 +24,10 @@
 
   strong.blue {
     color: $mainBlue;
+  }
+
+  @mixin atLarge {
+    padding-left: 0;
   }
 
 }

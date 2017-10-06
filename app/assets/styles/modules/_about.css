@@ -2,14 +2,32 @@
 
   &__header {
     color: $mainBlue;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: center;
-    padding-bottom: 3rem;
+    padding: 1rem .6rem 1rem .6rem;
+
+    @mixin atSmall {
+      padding: 2rem .6rem 2rem .6rem;
+    }
+
+    @mixin atMedium {
+      padding: 0rem .6rem 3.5rem .6rem;
+      font-size: 2.5rem;
+    }
 
     &--bold {
       font-weight: 600;
     }
   }
 
+}
+
+.small-truck {
+
+  visibility: hidden;
+
+  @mixin atMedium {
+    visibility: visible;
+  }
 }

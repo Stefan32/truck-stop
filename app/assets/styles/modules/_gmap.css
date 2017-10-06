@@ -1,3 +1,12 @@
 .gmap {
-  
+
+  padding: 1rem 0 2rem;
+
+  @mixin atSmall {
+    padding: 2rem 0 3rem;
+  }
+
+  @mixin atMedium {
+    padding: 0;
+  }
 }

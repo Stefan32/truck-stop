@@ -3,13 +3,29 @@
     font-size: 1.2rem;
     line-height: 2rem;
 
+    @mixin atMedium {
+      line-height: 2.5rem;
+    }
+
+    @mixin atLarge {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
     &--light {
       font-weight: 300;
     }
 
-    span {
-      padding-right: 1.8rem;
-      font-weight: 500;
+    span.grey {
+
+      color: #3d3d3d;
+
+      @mixin atMedium {
+        padding-right: 1.8rem;
+        font-weight: 500;
+      }
+
     }
   }
 }

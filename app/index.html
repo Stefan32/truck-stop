@@ -37,11 +37,17 @@
       </div>
   </header>
 
-  <div class="large-picture">
-      <img srcset="assets/images/banner1--large.jpg" alt="View of Viljoenskroon Truck Stop." class="large-picture__image">
-  </div>
+    <div class="large-picture">
+      <picture>
+          <source srcset="assets/images/banner0--large.jpg 1920w" media="(min-width: 1250px)">
+          <source srcset="assets/images/banner0--medium.jpg 1380w" media="(min-width: 920px)">
+          <source srcset="assets/images/banner0--small.jpg 990w" media="(min-width: 600px)">
+          <img srcset="assets/images/banner0--smaller.jpg 640w" alt="truck stop view">
+      </picture>
+    </div>
 
-  <div id="about" class="page-section wrapper">
+
+  <div id="about" class="page-section wrapper" data-matching-link="#about-link">
       <div class="about__header">
         Welcome to <span class="about__header--bold">Viljoenskroon Truck Stop</span>
       </div>
@@ -56,42 +62,42 @@
           </div>
         </div>
         <div class="row__4">
-            <img src="assets/images/truck1.jpg" alt="truck stop view">
+            <img src="assets/images/truck1.jpg" alt="truck stop view" class="small-truck">
         </div>
       </div>
   </div>
 
-  <div id="services" class="page-section page-section--blue">
+  <div id="services" class="page-section page-section--blue" data-matching-link="#services-link">
       <div class="wrapper">
           <div class="services__header">
             <div class="services-header__heading">
-              <img src="assets/images/icons/star.png" alt="star"> Our <span class="services__header--bold">Services</span>
+              <img class="title-icon" src="assets/images/icons/star.png" alt="star"> Our <span class="services__header--bold">Services</span>
             </div>
           </div>
 
           <div class="row">
               <div class="row__7">
                   <div class="services__item">
-                      <img src="assets/images/icons/24hours.png" alt="24hours"><p>Open 24 Hours a Day</p>
+                      <img class="item-icon" src="assets/images/icons/24hours.png" alt="24hours"><p>Open 24 Hours a Day</p>
                   </div>
                   <div class="services__item">
-                      <img src="assets/images/icons/braai.png" alt="braai"><p>Braai Area</p>
+                      <img class="item-icon" src="assets/images/icons/braai.png" alt="braai"><p>Braai Area</p>
                   </div>
                   <div class="services__item">
-                      <img src="assets/images/icons/weighbridge.png" alt="weighbridge"><p>Weighbridge</p>
+                      <img class="item-icon" src="assets/images/icons/weighbridge.png" alt="weighbridge"><p>Weighbridge</p>
                   </div>
               </div>
               <div class="row__5">
                   <div class="services__item">
-                      <img src="assets/images/icons/secure.png" alt="secure"><p>Safe &amp; Secure Parking</p>
+                      <img class="item-icon" src="assets/images/icons/secure.png" alt="secure"><p>Safe &amp; Secure Parking</p>
                   </div>
 
                   <div class="services__item">
-                      <img src="assets/images/icons/bathroom.png" alt="bathroom"><p>Clean Ablutions</p>
+                      <img class="item-icon" src="assets/images/icons/bathroom.png" alt="bathroom"><p>Clean Ablutions</p>
                   </div>
 
                   <div class="services__item">
-                      <img src="assets/images/icons/takeaway.png" alt="TakeAwayShop"><p>Take Away Shop</p>
+                      <img class="item-icon" src="assets/images/icons/takeaway.png" alt="TakeAwayShop"><p>Take Away Shop</p>
                   </div>
               </div>
           </div>
@@ -99,7 +105,7 @@
 
   </div>
 
-  <div id="contact-us" class="page-section">
+  <div id="contact-us" class="page-section" data-matching-link="#contact-us-link">
       <div class="wrapper">
           <div class="services__header services__header--blue">
               <strong class="services__header--bold">Contact</strong> Us
@@ -108,17 +114,10 @@
           <div class="contact-us__text">
               <div class="row">
                   <div class="row__small-3 row__small-3--blue">
-                      <p>Cellphone</p>
-                      <p>Email</p>
-                      <p>Address</p>
-                      <p>GPS Coordinates</p>
-                  </div>
-
-                  <div class="row__small-4 contact-us__text--light">
-                      <p><span>:</span> 083 409 5304</p>
-                      <p><span>:</span> fgalore@mweb.co.za</p>
-                      <p><span>:</span> Fortunastreet, VILJOENSKROON</p>
-                      <p><span>:</span> -27.208838, 26.926700</p>
+                      <p>Cellphone <span class="grey">: 083 409 5304</span></p>
+                      <p>Email <span class="grey">: fgalore@mweb.co.za</span> </p>
+                      <p>Address <span class="grey">: Fortunastreet, VILJOENSKROON</span></p>
+                      <p>GPS Coordinates <span class="grey">: -27.208838, 26.926700</span></p>
                   </div>
 
                   <div class="row__small-5 gmap">
