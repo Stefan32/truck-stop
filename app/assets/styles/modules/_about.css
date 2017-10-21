@@ -26,8 +26,10 @@
 .small-truck {
 
   visibility: hidden;
+  display: none;
 
   @mixin atMedium {
+    display: block;
     visibility: visible;
   }
 }
